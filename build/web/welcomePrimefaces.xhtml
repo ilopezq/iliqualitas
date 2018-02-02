@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+    <f:view contentType="text/html">
+        <h:head>
+            <f:facet name="first">
+                <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
+                <title>PrimeFaces</title>
+            </f:facet>
+        </h:head>
+
+        <h:body>
+
+            <p:layout fullPage="true">
+
+                <p:layoutUnit position="north" size="100" resizable="true" closable="true" collapsible="true">
+                    Header
+                </p:layoutUnit>
+
+                <p:layoutUnit position="south" size="100" closable="true" collapsible="true">
+                    Footer
+                </p:layoutUnit>
+
+                <p:layoutUnit position="west" size="175" header="Left" collapsible="true">
+                    <p:menu>
+                        <p:submenu label="Resources">
+                            <p:menuitem value="Demo" url="http://www.primefaces.org/showcase-labs/ui/home.jsf" />
+                            <p:menuitem value="Documentation" url="http://www.primefaces.org/documentation.html" />
+                            <p:menuitem value="Forum" url="http://forum.primefaces.org/" />
+                            <p:menuitem value="Themes" url="http://www.primefaces.org/themes.html" />
+
+                        </p:submenu>
+
+                    </p:menu>
+                </p:layoutUnit>
+
+                <p:layoutUnit position="center">
+                    <h:body>
+                        <h:form id="form">           
+                            <p:growl id="msgs" showDetail="true" />
+
+                            <h3 style="margin-top:0">Los hombres mas guapos del cine</h3>
+                            <p:accordionPanel>
+                                <p:tab title="Tom Hiddleston">
+                                    <h:panelGrid columns="2" cellpadding="10">
+                                        <img src="imagenes/TomHiddleston.jpg"/>
+                                        Thomas William Hiddleston (born 9 February 1981)[1] is an English actor, producer and musical performer. At the beginning of his career, he appeared in West End theatre productions of Cymbeline (2007) and Ivanov (2008). He won the Laurence Olivier Award for Best Newcomer in a Play for his role in Cymbeline and was also nominated for the same award for his role as Cassio in Othello.
+
+                                        He came to wider public attention when cast as Loki in the Marvel Cinematic Universe, appearing in Thor (2011), The Avengers (2012), Thor: The Dark World (2013), and Thor: Ragnarok (2017). In 2011, he won the Empire Award for Best Male Newcomer and was nominated for the BAFTA Rising Star Award. Hiddleston has also appeared in Steven Spielberg's War Horse (2011), The Deep Blue Sea (2011), Woody Allen's romantic comedy Midnight in Paris (2011), the 2012 BBC series Henry IV and Henry V, and the romantic vampire film Only Lovers Left Alive (2013).
+
+                                        In late 2013 and early 2014, Hiddleston starred as the title character in the Donmar Warehouse production of Coriolanus, winning the Evening Standard Theatre Award for Best Actor. In 2015, he starred in Guillermo del Toro's Crimson Peak, Ben Wheatley's High Rise, and played the troubled country music singer Hank Williams in the biopic I Saw The Light.
+
+                                        In 2016, he starred in and was an executive producer of the AMC / BBC limited series The Night Manager, for which he received two Primetime Emmy Award nominations for Outstanding Lead Actor in a Limited Series or Movie and Outstanding Limited Series, and won his first Golden Globe Award for Best Actor – Miniseries or Television Film.
+                                    </h:panelGrid>
+                                </p:tab>
+                                <p:tab title="Chris Hemsworth">
+                                    <h:panelGrid columns="2" cellpadding="10">
+                                        <img src="imagenes/ChrisHemsworth.jpg"/>
+                                        Christopher Hemsworth[1] (born 11 August 1983)[2][3] is an Australian actor. He is known for playing Kim Hyde in the Australian TV series Home and Away (2004–07) and Thor in the Marvel Cinematic Universe since 2011. Hemsworth has also appeared in the science fiction action film Star Trek (2009), the thriller adventure A Perfect Getaway (2009), the horror comedy The Cabin in the Woods (2012), the dark-fantasy action film Snow White and the Huntsman (2012), the war film Red Dawn (2012), and the biographical sports drama film Rush (2013).
+
+                                        In 2015, he starred in the action thriller film Blackhat, had a comedic role in the fifth installment of National Lampoon's Vacation series, Vacation, and headlined the biographical thriller film In the Heart of the Sea.[4] The following year, Hemsworth had a supporting role in Sony's reboot of Ghostbusters.[5] Hemsworth will reprise his role as George Kirk in the upcoming Star Trek seque
+                                    </h:panelGrid>
+                                </p:tab>
+                                <p:tab title="Chris Evans">
+                                    <h:panelGrid columns="2" cellpadding="10">
+                                        <img src="imagenes/ChrisEvans.jpg"/>
+                                        Christopher Robert Evans (born June 13, 1981)[1] is an American actor and filmmaker. Evans is known for his superhero roles as the Marvel Comics characters Steve Rogers / Captain America in the Marvel Cinematic Universe and Johnny Storm / Human Torch in Fantastic Four and its 2007 sequel.
+
+                                        He began his career on the 2000 television series Opposite Sex, and has since appeared in a number of films, such as Not Another Teen Movie, Sunshine, Scott Pilgrim vs. the World, Snowpiercer, and Gifted. In 2014, Evans made his directorial debut with the drama film Before We Go, in which he also starred.
+                                    </h:panelGrid>
+                                </p:tab>
+                            </p:accordionPanel>
+                        </h:form>
+                    </h:body>
+                </p:layoutUnit>
+
+            </p:layout>
+
+        </h:body>
+
+    </f:view>
+</html>
+

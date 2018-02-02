@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+      
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form>
+         <h:panelGrid columns="4" cellpadding="5">        
+            <h:outputLabel for="dato1" value="Dato1:" style="font-weight:bold" />
+            <p:inputText id="dato1" value="#{manageBeanCalculadora.dato1}" />
+            <h:outputLabel for="dato2" value="Dato2:" style="font-weight:bold" />
+            <p:inputText id="dato2" value="#{manageBeanCalculadora.dato2}" />
+            <p:commandButton value="Sumar"
+                             actionListener="#{manageBeanCalculadora.sumar}"
+                             update="display"
+                             icon="ui-icon-chec"/> 
+            <h:outputText id="display" value="#{manageBeanCalculadora.resultado}" />
+            
+            <p:commandButton value="Restar"
+                             actionListener="#{manageBeanCalculadora.restar}"
+                             update="display1"
+                             icon="ui-icon-chec"/> 
+            <h:outputText id="display1" value="#{manageBeanCalculadora.resultado1}" />
+            
+            </h:panelGrid>
+        </h:form>
+    </h:body>
+</html>
+
